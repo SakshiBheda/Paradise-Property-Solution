@@ -16,6 +16,22 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  const handleLinkClick = (path: string) => {
+    setIsOpen(false);
+    
+    // Handle hash links (sections on home page)
+    if (path.includes("#")) {
+      const hash = path.split("#")[1];
+      const element = document.getElementById(hash);
+      
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  };
+
   const isActive = (path: string) => {
     if (path.includes("#")) return false;
     return location.pathname === path;
@@ -36,6 +52,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => handleLinkClick(link.path)}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   isActive(link.path) ? "text-primary" : "text-muted-foreground"
                 }`}
@@ -68,7 +85,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={() => setIsOpen(false)}
+                onClick={() => handleLinkClick(link.path)}
                 className={`block py-2 text-sm font-medium transition-colors hover:text-primary ${
                   isActive(link.path) ? "text-primary" : "text-muted-foreground"
                 }`}
