@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-semibold text-xl">
             <Building2 className="h-6 w-6" />
-            <span>Elite Properties</span>
+            <span>Paradise Property Solution</span>
           </Link>
 
           {/* Desktop Navigation */}

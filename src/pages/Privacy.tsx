@@ -64,7 +64,7 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">8. Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about this Privacy Policy, please contact us through our Contact page or at privacy@eliteproperties.com.
+                If you have any questions about this Privacy Policy, please contact us through our Contact page or at privacy@paradisepropertysolution.com.
               </p>
             </section>
 

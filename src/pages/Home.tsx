@@ -38,34 +38,72 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-secondary/30 to-background">
-        <div className="container mx-auto px-4">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+          }}
+        />
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/60" />
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center max-w-3xl mx-auto"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-center max-w-4xl mx-auto"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Find Your Perfect Property
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Discover premium residential and commercial properties that match your lifestyle and investment goals.
-            </p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
+            <motion.h1 
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight"
+            >
+              Find Your Perfect Property
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed"
+            >
+              Discover premium residential and commercial properties that match your lifestyle and investment goals.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              whileHover={{ scale: 1.05 }}
             >
               <Link to="/properties">
-                <Button size="lg" className="group">
+                <Button size="lg" className="group bg-white text-black hover:bg-white/90 font-semibold text-lg px-8 py-6 h-auto">
                   Explore Properties
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
                 </Button>
               </Link>
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Animated Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2"
+          >
+            <div className="w-1.5 h-1.5 bg-white rounded-full" />
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Services Section */}
@@ -101,9 +139,9 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl font-bold mb-6">About Elite Properties</h2>
+              <h2 className="text-4xl font-bold mb-6">About Paradise Property Solution</h2>
               <p className="text-muted-foreground mb-4">
-                With over 15 years of experience in the real estate industry, Elite Properties has established itself as a trusted name in property solutions.
+                With over 15 years of experience in the real estate industry, Paradise Property Solution has established itself as a trusted name in property solutions.
               </p>
               <p className="text-muted-foreground mb-4">
                 We specialize in connecting clients with their ideal properties, whether it's a cozy residential home or a strategic commercial space. Our team of experts ensures a seamless experience from property search to final transaction.

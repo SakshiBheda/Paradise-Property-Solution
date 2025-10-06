@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Building2 className="h-5 w-5" />
-              <span className="font-semibold text-lg">Elite Properties</span>
+              <span className="font-semibold text-lg">Paradise Property Solution</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Your trusted partner in finding the perfect property.
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Elite Properties. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Paradise Property Solution. All rights reserved.</p>
         </div>
       </div>
     </footer>

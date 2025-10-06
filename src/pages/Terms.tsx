@@ -15,7 +15,7 @@ const Terms = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing and using Elite Properties' services, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our services.
+                By accessing and using Paradise Property Solution's services, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our services.
               </p>
             </section>
 
@@ -43,14 +43,14 @@ const Terms = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">5. Intellectual Property</h2>
               <p className="text-muted-foreground leading-relaxed">
-                All content on our platform, including text, graphics, logos, images, and software, is the property of Elite Properties and is protected by copyright and other intellectual property laws.
+                All content on our platform, including text, graphics, logos, images, and software, is the property of Paradise Property Solution and is protected by copyright and other intellectual property laws.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">6. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Elite Properties shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services.
+                Paradise Property Solution shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services.
               </p>
             </section>
 
@@ -78,14 +78,14 @@ const Terms = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">10. Governing Law</h2>
               <p className="text-muted-foreground leading-relaxed">
-                These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Elite Properties operates.
+                These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Paradise Property Solution operates.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">11. Contact Information</h2>
               <p className="text-muted-foreground leading-relaxed">
-                For any questions regarding these terms, please contact us through our Contact page or at legal@eliteproperties.com.
+                For any questions regarding these terms, please contact us through our Contact page or at legal@paradisepropertysolution.com.
               </p>
             </section>
 
