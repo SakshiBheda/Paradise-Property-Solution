@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import ServicesPage from "./pages/Services";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/properties" element={<Properties />} />
           <Route path="/property/:id" element={<PropertyDetail />} />
           <Route path="/contact" element={<Contact />} />
